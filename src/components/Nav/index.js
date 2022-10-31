@@ -11,11 +11,11 @@ function Nav(props) {
 
     return (
         <header>
-            <nav className=' nav navbar navbar-expand-lg'>
+            <nav className=' nav navbar'>
                 <Link to='/' className='navbar-brand' >
                     <img src={Logo} alt='mercury logo' className='logo' />
                 </Link>
-                <ul className='navbar-nav mr-auto  d-flex flex-row justify-content-between'>
+                <ul className='navbar-nav  d-flex flex-row'>
                     <NavLink exact='true' className={splitLocation[1] === 'about' ? 'active' : 'nav'} to='/about'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
