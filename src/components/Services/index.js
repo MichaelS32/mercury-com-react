@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeIn } from 'react-slide-fade-in';
 
 const ourServices = [
     {
@@ -36,17 +37,25 @@ const ourServices = [
 function Services() {
     return (
         <section id='services' className='section-spacing'>
-            <h3>Our Services</h3>
-            <div className='d-flex flex-row flex-wrap service-container'>
-                {ourServices.map((service) => (
-                    <div className='service-cards card col-8 col-sm-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3'>
-                        <div className='card-body'>
-                            <h2 key={service.title} className='card-title service-title'>{service.title}</h2>
-                            <p key={service.text} className='card-text service-text'>{service.text}</p>
-                        </div>
-                    </div>            
-                ))}
-            </div>
+            <FadeIn
+                from='bottom'
+                positionOffset={500}
+                triggerOffset={200}
+                delayInMilliseconds={500}
+                durationInMilliseconds={1000}
+                >
+                <h3>Our Services</h3>
+                <div className='d-flex flex-row flex-wrap service-container'>
+                    {ourServices.map((service) => (
+                        <div className='service-cards card col-8 col-sm-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3'>
+                            <div className='card-body'>
+                                <h2 key={service.title} className='card-title service-title'>{service.title}</h2>
+                                <p key={service.text} className='card-text service-text'>{service.text}</p>
+                            </div>
+                        </div>            
+                    ))}
+                </div>
+            </FadeIn>
         </section>
     )
 }

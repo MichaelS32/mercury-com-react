@@ -3,12 +3,19 @@ import Slider from "react-slick";
 
 export default function Reviews() {
   var settings = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    draggable: true,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
   };
+
+//   slickPlay();
   return (
     <section className='reviews-bg'>
         <h2 className='reviews-title'>Reviews</h2>

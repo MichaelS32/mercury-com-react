@@ -30,7 +30,8 @@ code {
 }
 
 .nav-text {
-  font-size: calc(20px + ( .1vw))
+  font-size: calc(8px + 2vw);
+  margin-left: 2vw;
   
 }
 .nav {
@@ -39,11 +40,16 @@ code {
   background-color: var(--accent2);
   margin-bottom: 0 !important;
   justify-content: space-around;
+  
 
 }
 
+.footer-txt {
+  font-size: small;
+}
+
 .footer {
-  width: 100vw;
+  width: 100%;
   font-size: large;
   color: var(--accent2);
   background-color: var(--tertiary);
@@ -58,11 +64,14 @@ code {
 .footer-image {
   float: right;
   width: 8vw;
+  margin-top: 1vh;
   margin-right: 4vw;
 }
 
 .hero-image {
   width: 100vw;
+  border-radius: 0;
+  border-style: none;
   // background: fixed;
 }
 
@@ -75,7 +84,7 @@ code {
 }
 
 .section-spacing {
-  margin-top: calc(400px - 25vw);
+  margin-top: calc(360px - 20vw);
   
 }
 
@@ -84,8 +93,10 @@ code {
   height:fit-content;
   width:fit-content;
   box-sizing: border-box;
-  margin-top: calc(30vh - 125px);
+  margin-top: calc(35px + 10vw);
   margin-left: 2vw;
+  margin-right: 0;
+  border-radius: 10px;
 }
 
 .hero-underline {
@@ -94,19 +105,23 @@ code {
 }
 
 .bg-title{
-  position:absolute;
-  // top: calc(220px + 2vw);
-  // left:calc(8px + 2vw);
+  
+  
   box-sizing: content-box;
   background-color: var(--primary);
 }
 
+.overlay-size {
+  text-align: left;
+  height:fit-content;
+  width: fit-content;
+  margin-top: calc(5px + 12vw);
+  margin-left: 2vw;
+}
+
 .title-underline {
-  position: relative;
-  
-  // border-bottom: solid 3px var(--secodary);
   box-sizing:border-box;
-  font-size: 3rem;
+  font-size: calc(10px + 3vw);
   margin-left: 5vw;
 }
 
@@ -138,9 +153,12 @@ code {
 
 .reviews-bg {
   background-color: var(--primary);
-  margin: 4vw;
+  width: 70vw;
+  margin: 5vh auto;
   padding-top: 2vh;
-  padding-bottom: .5vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 4vh;
 }
 
 .reviews-title {
@@ -148,7 +166,8 @@ code {
 }
 
 .review-text {
-  width: 50vw;
+  
+  font-size: calc(2px + 2vw);
 }
 
 .contact-card {
@@ -156,11 +175,13 @@ code {
   background-color: var(--secodary);
   margin: 3vh auto;
   width: 40vw;
+  min-width: 260px;
   text-align: left;
 }
 
 .contact-field {
   width: 38vw;
+  min-width: 230px;
 }
 
 .industry-container {
@@ -177,8 +198,27 @@ code {
 }
 
 .industry-text {
-  color: var(--tertiary);
+  color: white;
   width: 60vw;
+}
+
+.about-overlay-size {
+  text-align: left;
+  height:fit-content;
+  width:fit-content;
+  box-sizing: border-box;
+  margin-top: calc(22px + 15vw);
+  margin-left: 8vw;
+}
+
+.about-text {
+  font-size: calc(8px + 1vw);
+  text-align: left;
+  color: white;
+  margin-top: calc(60px - 2vw);
+  margin-left: 8vw;
+  width: 60vw;
+  min-width: 240px;
 }
 
 h3 {

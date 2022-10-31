@@ -1,4 +1,5 @@
 import React from 'react'
+import { FadeIn } from 'react-slide-fade-in'
 import industryPic from '../../assets/industries-background.png'
 
 const ourIndustries = [
@@ -23,25 +24,41 @@ const ourIndustries = [
 const Industries = () => {
     return (
         <section>
-            <div id='industries' className='card text-white'>
-                <img src={industryPic} alt='river walk view with decorations' className='card-img hero-image bg-dark' />
-                <div className='container industry-title-container'>
-                    <div className='card-overlay-size card-img-overlay p-2 text-white row bg-title d-flex justify-content-end'>
-                        <h3 className='card-title hero-title title-underline'>I.T. Solutions for your Industry</h3>
-                    </div>
-                </div>
-            </div>
-            <div className='industry-container card-spacing'>
-                {ourIndustries.map((industry) => (
-                    <div className=''>
-                        <div className='industry-card'>
-                            <h3 key={industry.title} className='industry-title'>{industry.title}</h3>
-                            <p key={industry.text} className='industry-text'>{industry.text}</p>
+            <FadeIn
+                from='left'
+                positionOffset={500}
+                triggerOffset={200}
+                delayInMilliseconds={0}
+                durationInMilliseconds={1000}
+                >
+                <div id='industries' className='card text-white'>
+                    <img src={industryPic} alt='river walk view with decorations' className='card-img hero-image bg-dark' />
+                    <div className='container industry-title-container'>
+                        <div className='overlay-size card-img-overlay p-2 text-white row bg-title d-flex justify-content-end'>
+                            <h3 className='card-title hero-title title-underline'>I.T. Solutions for your Industry</h3>
                         </div>
                     </div>
+                </div>
+            </FadeIn>
+            <FadeIn
+                from='right'
+                positionOffset={500}
+                triggerOffset={200}
+                delayInMilliseconds={0}
+                durationInMilliseconds={1000}
+                >
+                <div className='industry-container card-spacing'>
+                    {ourIndustries.map((industry) => (
+                        <div className=''>
+                            <div className='industry-card'>
+                                <h3 key={industry.title} className='industry-title'>{industry.title}</h3>
+                                <p key={industry.text} className='industry-text'>{industry.text}</p>
+                            </div>
+                        </div>
 
-                ))}
-            </div>
+                    ))}
+                </div>
+            </FadeIn>
         </section>
     )
 }

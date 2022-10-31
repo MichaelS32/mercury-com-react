@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Logo from '../../assets/mercury-logo-dk-bg.png';
 
 function Nav(props) {
     const location = useLocation();
     const { pathname } = location;
-    const splitLocation = pathname.split('/');
+    const splitLocation = pathname.split('/'||'#');
 
     return (
         <header>
@@ -22,13 +23,13 @@ function Nav(props) {
                             </div>
                         </li>
                     </NavLink>
-                    <NavLink exact='true' className={splitLocation[1] === 'services' ? 'active' : 'nav'} to='/services'>
+                    <HashLink smooth className={splitLocation[1] === 'services' ? 'active' : 'nav'} to='/#services'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Services
                             </div>
                         </li>
-                    </NavLink>
+                    </HashLink>
                     <NavLink exact='true' className={splitLocation[1] === 'industries' ?'active' : 'nav'} to='/industries'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
@@ -36,13 +37,13 @@ function Nav(props) {
                             </div>
                         </li>
                     </NavLink>
-                    <NavLink exact='true' className={splitLocation[1] === 'contact' ?'active' : 'nav'} to='/contact'>
+                    <HashLink smooth className={splitLocation[1] === 'contact' ?'active' : 'nav'} to='/#contact'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Contact
                             </div>
                         </li>
-                    </NavLink>
+                    </HashLink>
                 </ul>
             </nav>
         </header>

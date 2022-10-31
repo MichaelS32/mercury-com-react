@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+import apiKey from '../../emailKey.js'
 import { validateEmail } from '../../utils/helpers';
+import emailjs from '@emailjs/browser'
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -9,10 +10,14 @@ function Contact() {
     const { name, email, message } = formState;
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log('Submit Form', formState);
-        }
+        e.preventDefault(); // Prevents default refresh by the browser
+        emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+        .then((result) => {
+            alert("Message Sent, We will get back to you shortly", result.text);
+        },
+        (error) => {
+            alert("An error occurred, Please try again", error.text);
+        });
     };
 
     const handleChange = (e) => {
@@ -45,15 +50,15 @@ function Contact() {
                         <form id="contact-form" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className='contact-field'>Name:</label>
-                                <input type="text" name="name" className='form-input contact-field' defaultValue={name} onBlur={handleChange} />
+                                <input id='name' type="text" name="name" className='form-input contact-field' defaultValue={name} onBlur={handleChange} />
                             </div>
                             <div>
                                 <label htmlFor="email" className='contact-field'>Email address:</label>
-                                <input type="email" name="email" className='form-input contact-field' defaultValue={email} onBlur={handleChange} />
+                                <input id='email' type="email" name="email" className='form-input contact-field' defaultValue={email} onBlur={handleChange} />
                             </div>
                             <div>
                                 <label htmlFor="message" className='contact-field'>Message:</label>
-                                <textarea name="message" rows="5" className='form-input contact-field' defaultValue={message} onBlur={handleChange} />
+                                <textarea id='message' name="message" rows="5" className='form-input contact-field' defaultValue={message} onBlur={handleChange} />
                             </div>
                             {errorMessage && (
                                 <div>
