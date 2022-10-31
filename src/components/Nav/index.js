@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import Logo from '../../assets/mercury-large-logo.png';
+import Logo from '../../assets/mercury-logo-dk-bg.png';
 
 function Nav(props) {
     const location = useLocation();
@@ -12,35 +12,35 @@ function Nav(props) {
         <header>
             <nav className=' nav navbar navbar-expand-lg'>
                 <Link to='/' className='navbar-brand' >
-                    <img src='Logo' alt='mercury logo' />
+                    <img src={Logo} alt='mercury logo' className='logo' />
                 </Link>
                 <ul className='navbar-nav mr-auto  d-flex flex-row justify-content-between'>
                     <NavLink exact='true' className={splitLocation[1] === 'about' ? 'active' : 'nav'} to='/about'>
                         <li className='nav-item p-2'>
-                            <h2>
-                                About Us
-                            </h2>
+                            <div className='nav-text'>
+                                About
+                            </div>
                         </li>
                     </NavLink>
                     <NavLink exact='true' className={splitLocation[1] === 'services' ? 'active' : 'nav'} to='/services'>
                         <li className='nav-item p-2'>
-                            <h2>
-                                Our Services
-                            </h2>
+                            <div className='nav-text'>
+                                Services
+                            </div>
                         </li>
                     </NavLink>
-                    <NavLink exact='true' className={splitLocation[1] === 'industries' ?'active' : 'nav'} to='/industires'>
+                    <NavLink exact='true' className={splitLocation[1] === 'industries' ?'active' : 'nav'} to='/industries'>
                         <li className='nav-item p-2'>
-                            <h2>
+                            <div className='nav-text'>
                                 Industries
-                            </h2>
+                            </div>
                         </li>
                     </NavLink>
                     <NavLink exact='true' className={splitLocation[1] === 'contact' ?'active' : 'nav'} to='/contact'>
                         <li className='nav-item p-2'>
-                            <h2>
-                                Contact Us
-                            </h2>
+                            <div className='nav-text'>
+                                Contact
+                            </div>
                         </li>
                     </NavLink>
                 </ul>

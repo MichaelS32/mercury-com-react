@@ -1,9 +1,10 @@
 :root {
   --primary: #009ffd;
-  --secodary: #d63230;
+  --secodary: #ff6961;
   --tertiary: #bcb8b1;
   --accent1: #f7dba7;
-  --accent2: #004777
+  --accent2: #004777;
+
 }
 
 body {
@@ -13,6 +14,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--accent2);
+  overflow-x: hidden;
+   
 }
 
 code {
@@ -20,14 +24,163 @@ code {
     monospace;
 }
 
+.logo {
+  width: 20vw;
+  min-width: 100px;
+}
+
 .nav-text {
-  font-size: 1.75rem;
+  font-size: calc(20px + ( .1vw))
+  
 }
 .nav {
   text-decoration: none;
-  color: var(--secodary);
-  background-color: var(--primary);
+  color: var(--primary);
+  background-color: var(--accent2);
   margin-bottom: 0 !important;
   justify-content: space-around;
 
+}
+
+.footer {
+  width: 100vw;
+  font-size: large;
+  color: var(--accent2);
+  background-color: var(--tertiary);
+  text-align: left;
+  padding-left: 10vw;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  margin-top: 5vh;
+
+}
+
+.footer-image {
+  float: right;
+  width: 8vw;
+  margin-right: 4vw;
+}
+
+.hero-image {
+  width: 100vw;
+  // background: fixed;
+}
+
+.hero-title {
+  font-size: calc(14px + .75vw)
+}
+
+.hero-text {
+  font-size: calc(10px + .75vw)
+}
+
+.section-spacing {
+  margin-top: calc(400px - 25vw);
+  
+}
+
+.card-overlay-size {
+  text-align: left;
+  height:fit-content;
+  width:fit-content;
+  box-sizing: border-box;
+  margin-top: calc(30vh - 125px);
+  margin-left: 2vw;
+}
+
+.hero-underline {
+  border-bottom: solid 3px var(--secodary);
+  box-sizing: content-box;
+}
+
+.bg-title{
+  position:absolute;
+  // top: calc(220px + 2vw);
+  // left:calc(8px + 2vw);
+  box-sizing: content-box;
+  background-color: var(--primary);
+}
+
+.title-underline {
+  position: relative;
+  
+  // border-bottom: solid 3px var(--secodary);
+  box-sizing:border-box;
+  font-size: 3rem;
+  margin-left: 5vw;
+}
+
+.service-container {
+  justify-content: center;
+  
+}
+.service-cards {
+  justify-content: space-between; 
+  margin: 10px 10px;
+  color: var(--accent2);
+  box-sizing: content-box;
+}
+
+.service-title {
+  font-size: large;
+  border-bottom: solid 3px var(--secodary);
+  
+}
+
+.service-text {
+  font-size: medium;
+}
+
+
+.card-spacing {
+  margin-top: calc(20px - 20vw);
+}
+
+.reviews-bg {
+  background-color: var(--primary);
+  margin: 4vw;
+  padding-top: 2vh;
+  padding-bottom: .5vh;
+}
+
+.reviews-title {
+  color: var(--accent2);
+}
+
+.review-text {
+  width: 50vw;
+}
+
+.contact-card {
+  color: white;
+  background-color: var(--secodary);
+  margin: 3vh auto;
+  width: 40vw;
+  text-align: left;
+}
+
+.contact-field {
+  width: 38vw;
+}
+
+.industry-container {
+  margin: 5vh auto auto 10vw 
+}
+
+.industry-card {
+  text-align: left;
+  
+}
+
+.industry-title {
+  color: var(--primary);
+}
+
+.industry-text {
+  color: var(--tertiary);
+  width: 60vw;
+}
+
+h3 {
+  color: white;
 }
