@@ -7,7 +7,8 @@ import Reviews from '../Reviews'
 
 const Home =() => {
     return (
-        <section>
+        // <body>
+            <section>
             <FadeIn
                 from='left'
                 positionOffset={400}
@@ -48,8 +49,8 @@ const Home =() => {
             <br/>
             <br/>
             <br/>
-            <section id='services'>
-                <Services id='services'></Services>
+            <section>
+                <Services></Services>
 
             </section>
             <FadeIn
@@ -71,6 +72,7 @@ const Home =() => {
             
 
         </section>
+        // </body>
     );
 }
 

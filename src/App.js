@@ -7,6 +7,8 @@ import Home from './components/Home';
 import Industries from './components/Industries';
 import Layout from './components/Layout';
 import Services from './components/Services';
+import './index.scss';
+
 
 function App() {
   return (

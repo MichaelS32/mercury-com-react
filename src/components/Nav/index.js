@@ -7,10 +7,11 @@ import Logo from '../../assets/mercury-logo-dk-bg.png';
 function Nav(props) {
     const location = useLocation();
     const { pathname } = location;
-    const splitLocation = pathname.split('/'||'#');
+    const splitLocation = pathname.split('/');
+    // elem = getElementById()
 
     return (
-        <header>
+        <header className='nav-sticky'>
             <nav className=' nav navbar'>
                 <Link to='/' className='navbar-brand' >
                     <img src={Logo} alt='mercury logo' className='logo' />
@@ -23,21 +24,21 @@ function Nav(props) {
                             </div>
                         </li>
                     </NavLink>
-                    <HashLink smooth className={splitLocation[1] === 'services' ? 'active' : 'nav'} to='/#services'>
+                    <HashLink smooth exact='true' className={splitLocation[3] === '#services' ? 'active' : 'nav'} to='/#services'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Services
                             </div>
                         </li>
                     </HashLink>
-                    <NavLink exact='true' className={splitLocation[1] === 'industries' ?'active' : 'nav'} to='/industries'>
+                    <NavLink exact='true' className={splitLocation[1] === 'industries' ? 'active' : 'nav'} to='/industries'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Industries
                             </div>
                         </li>
                     </NavLink>
-                    <HashLink smooth className={splitLocation[1] === 'contact' ?'active' : 'nav'} to='/#contact'>
+                    <HashLink smooth exact='true' className={splitLocation[3] === '#contact' ? 'active' : 'nav'} to='/#contact'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Contact

@@ -16,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--accent2);
   overflow-x: hidden;
+  // background-image: url(https://giphy.com/gifs/gwvwlggKm3ZplzM86F/fullscreen);
    
 }
 
@@ -30,6 +31,12 @@ code {
   margin-left: 2vw;
 }
 
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .nav-text {
   font-size: calc(6px + 1vw);
   margin: auto auto;
@@ -42,8 +49,6 @@ code {
   background-color: var(--accent2);
   margin-bottom: 0 !important;
   
-  
-
 }
 
 .active {
@@ -91,7 +96,8 @@ code {
 }
 
 .section-spacing {
-  margin-top: calc(360px - 20vw);
+  margin-top: calc(250px - 20vw);
+  padding-top: 11vh;
   
 }
 
@@ -161,11 +167,11 @@ code {
 
 .reviews-bg {
   background-color: var(--primary);
-  width: 70vw;
+  width: 100%;
   margin: 5vh auto;
   padding-top: 2vh;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  // padding-left: 8vw;
+  // padding-right: 8vw;
   padding-bottom: 6vh;
 }
 
@@ -174,7 +180,7 @@ code {
 }
 
 .review-text {
-  font-size: calc(4px + 1vw);
+  font-size: calc(32px - .75vw);
   padding: 3vh 9vw 3vh 9vw;
 }
 
@@ -183,13 +189,13 @@ code {
   background-color: var(--secodary);
   margin: 3vh auto;
   width: 40vw;
-  min-width: 260px;
+  min-width: 300px;
   text-align: left;
 }
 
 .contact-field {
-  width: 38vw;
-  min-width: 230px;
+  width: 100%;
+  margin: auto;
 }
 
 .industry-container {
