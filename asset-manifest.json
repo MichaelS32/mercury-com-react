@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mercury-com-react/static/css/main.9a1dbded.css",
-    "main.js": "/mercury-com-react/static/js/main.dcf29028.js",
+    "main.js": "/mercury-com-react/static/js/main.a106dd32.js",
     "static/js/787.f6f39179.chunk.js": "/mercury-com-react/static/js/787.f6f39179.chunk.js",
     "static/media/mercuryhero.jpeg": "/mercury-com-react/static/media/mercuryhero.b2b6397a1aa8767f4c46.jpeg",
     "static/media/industries-background.png": "/mercury-com-react/static/media/industries-background.c04005c014e1cf640481.png",
@@ -16,11 +16,11 @@
     "static/media/slick.woff": "/mercury-com-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/mercury-com-react/index.html",
     "main.9a1dbded.css.map": "/mercury-com-react/static/css/main.9a1dbded.css.map",
-    "main.dcf29028.js.map": "/mercury-com-react/static/js/main.dcf29028.js.map",
+    "main.a106dd32.js.map": "/mercury-com-react/static/js/main.a106dd32.js.map",
     "787.f6f39179.chunk.js.map": "/mercury-com-react/static/js/787.f6f39179.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1dbded.css",
-    "static/js/main.dcf29028.js"
+    "static/js/main.a106dd32.js"
   ]
 }
