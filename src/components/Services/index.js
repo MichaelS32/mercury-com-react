@@ -1,9 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
 import { FadeIn } from 'react-slide-fade-in';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/modal';
-import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const ourServices = [
@@ -67,12 +63,7 @@ function Services() {
                                     
                                 <HashLink smooth exact='true' to='/services2/#service2' key={service.id} className='button'>
                                     <p className='button-text'>Learn More</p>
-                                </HashLink>
-                                    
-                                    
-
-                                    
-                                
+                                </HashLink> 
                             {/* </div> */}
                         </div>            
                     ))}
