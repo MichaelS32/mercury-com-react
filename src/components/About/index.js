@@ -32,14 +32,25 @@ function About() {
             durationInMilliseconds={1000}
             >    
                 <p className='about-text'>
-                    Mercury Communication Services of San Antonio's mission is to provide 
+                    {/* Mercury Communication Services of San Antonio's mission is to provide 
                     customers with a world-class, tailored solution for every aspect of 
                     their communications network: staging, configuring, deploying, maintaining, 
                     and upgrading. We follow this up with support from our professionals with 
                     leading technical expertise and state-of-the-art resources and the result 
                     is a focused effort to provide our customers with the best telecommunications 
                     solutions in the industry. Regardless of your business size and complexity, 
-                    Mercury is ready to enable you with state-of-the-art equipment and functionality.
+                    Mercury is ready to enable you with state-of-the-art equipment and functionality. */}
+                    When searching for top-tier I.T. and telecommunication solutions in San Antonio, 
+                    Mercury Communication Services emerges as the clear choice. With a proven track 
+                    record of excellence, our Managed I.T. Services encompass network management, 
+                    cybersecurity, and cloud integration, ensuring businesses stay ahead in today's 
+                    digital landscape. Offering Fiber Optic Connectivity for lightning-fast data 
+                    transmission and VoIP solutions for seamless communication, Mercury Communication 
+                    Services guarantees optimized performance and reduced costs. Their expertise in 
+                    Web Hosting and Design further solidifies their position as a comprehensive service 
+                    provider. With a team of certified professionals, cutting-edge technology, and a 
+                    commitment to innovation, choosing Mercury Communication Services means choosing 
+                    unparalleled reliability and success for your business in San Antonio and beyond.
                 </p>
             </FadeIn>
             

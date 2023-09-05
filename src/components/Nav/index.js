@@ -24,7 +24,7 @@ function Nav(props) {
                             </div>
                         </li>
                     </NavLink>
-                    <HashLink smooth exact='true' className={splitLocation[3] === '#services' ? 'active' : 'nav'} to='/#services'>
+                    <HashLink smooth exact='true' className={splitLocation[3] === 'services' ? 'active' : 'nav'} to='/#services'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Services
@@ -38,7 +38,7 @@ function Nav(props) {
                             </div>
                         </li>
                     </NavLink>
-                    <HashLink smooth exact='true' className={splitLocation[3] === '#contact' ? 'active' : 'nav'} to='/#contact'>
+                    <HashLink smooth exact='true' className={splitLocation[3] === 'contact' ? 'active' : 'nav'} to='/#contact'>
                         <li className='nav-item p-2'>
                             <div className='nav-text'>
                                 Contact

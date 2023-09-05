@@ -7,9 +7,9 @@ const Layout = () => {
     return (
         <div className='App'>
             <Nav className='nav-sticky'/>
-            <body className='page-backgound'>
+            <section className='page-backgound'>
                 <Outlet />
-            </body>
+            </section>
             <Footer />
         </div>
     )

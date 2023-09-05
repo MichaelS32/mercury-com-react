@@ -45,6 +45,15 @@ export default function Reviews() {
                 fit our particular need. Mercury did that for us."
             </p>
         </div>
+        <div className='review-container'>
+            <h3>Dan Prisacaru <br /> Seven Hills Women's Health</h3>
+            
+            <p className="review-text">
+                "Mike, Duke, and their crew displayed utmost professionalism and took the time to address all of my queries. They installed the new phone systems at a fair cost and went above and beyond by offering a temporary fix for our old, malfunctioning system. The previous company I worked with was uninterested in assisting us due to our outdated setup.
+
+I wholeheartedly endorse "Mercury Communication Services" based in San Antonio for their exceptional work and excellent customer service."
+            </p>
+        </div>
         
         </Slider>
     </section>

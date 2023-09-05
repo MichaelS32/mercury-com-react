@@ -26,7 +26,7 @@ const Home =() => {
                                     Complete Business I.T. and Telecommunications Solutions
                                 </h3>
                                 <p className='card-text hero-text'>
-                                    Mercury Communication Services of San Antonio is a leading Information 
+                                    {/* Mercury Communication Services of San Antonio is a leading Information 
                                     Technology and Telecommunication solutions provider in the greater San 
                                     Antonio, Texas area. Its owners have over 30 years of experience and 
                                     while many changes have occurred in the I.T. and Telecommunications 
@@ -36,7 +36,8 @@ const Home =() => {
                                     assure that you always receive the highest levels of reliability and 
                                     technology. Make Mercury Communications of San Antonio your business's 
                                     "One Stop Shop" for I.T. and Telecommunications services.  Should a problem 
-                                    ever arise or have questions, our technicians are available 24 hours, 7 days a week.
+                                    ever arise or have questions, our technicians are available 24 hours, 7 days a week. */}
+                                    Elevating Connectivity and Empowering Success: Discover Mercury Communication Services of San Antonio – Your Trusted Partner for Cutting-Edge Telecommunication and IT Solutions
                                 </p>
                             </div>
                         </div>
@@ -62,9 +63,9 @@ const Home =() => {
                 <Reviews></Reviews>
             </FadeIn>
             <FadeIn
-                from='right'
-                positionOffset={400}
-                triggerOffset={200}
+                from=''
+                positionOffset={0}
+                triggerOffset={0}
                 delayInMilliseconds={800}
                 durationInMilliseconds={2000}>
                 <Contact id='contact'></Contact>

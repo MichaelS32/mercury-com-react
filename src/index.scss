@@ -1,6 +1,6 @@
 :root {
   --primary: #009ffd;
-  --secodary: #ff6961;
+  --secodary: #bf0603;
   --tertiary: #bcb8b1;
   --accent1: #f7dba7;
   --accent2: black;
@@ -48,6 +48,7 @@ code {
   color: white;
   background-color: var(--accent2);
   margin-bottom: 0 !important;
+  width: 100%;
   
 }
 
@@ -57,33 +58,34 @@ code {
 }
 
 .footer-txt {
-  font-size: small;
+  font-size: 14px;
 }
 
 .footer {
   width: 100%;
   font-size: large;
-  color: var(--accent2);
-  background-color: var(--tertiary);
+  color: white;
+  background-color: var(--accent2);
   text-align: left;
   padding-left: 10vw;
   padding-bottom: 2vh;
   padding-top: 2vh;
   margin-top: 5vh;
+  border-top: solid 3px var(--primary)
 
 }
 
 .footer-image {
   float: right;
   width: 8vw;
-  margin-top: 1vh;
-  margin-right: 4vw;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .hero-image {
   width: 100vw;
-  border-radius: 0;
-  border-style: none;
+  
+  // border-style: none;
   // background: fixed;
 }
 
@@ -97,7 +99,7 @@ code {
 
 .section-spacing {
   margin-top: calc(250px - 20vw);
-  padding-top: 11vh;
+  // padding-top: 11vh;
   
 }
 
@@ -110,6 +112,14 @@ code {
   margin-left: 2vw;
   margin-right: 0;
   border-radius: 10px;
+}
+
+.services-header {
+  justify-content: left;
+  width: 30vw;
+  border-radius: 5px !important;
+  margin-left: 10vw;
+  border: solid 3px var(--primary);
 }
 
 .hero-underline {
@@ -147,6 +157,8 @@ code {
   margin: 10px 10px;
   color: var(--accent2);
   box-sizing: content-box;
+  background-color: white;
+  padding: 2vw;
 }
 
 .service-title {
@@ -188,8 +200,8 @@ code {
   color: white;
   background-color: var(--secodary);
   margin: 3vh auto;
-  width: 40vw;
-  min-width: 300px;
+  width: 50vw;
+  // min-width: 300px;
   text-align: left;
 }
 
@@ -237,4 +249,20 @@ code {
 
 h3 {
   color: white;
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--primary);
+  color: white;
+  border: solid 3px var(--primary);
+  border-radius: 5px;
+  // width: 32%;
+  margin: auto;
+  
+}
+
+.button-text {
+  align-content: center;
+  margin: auto 1vw;
 }

@@ -49,7 +49,7 @@ const Industries = () => {
                 >
                 <div className='industry-container card-spacing'>
                     {ourIndustries.map((industry) => (
-                        <div className=''>
+                        <div key={industry.title} className=''>
                             <div className='industry-card'>
                                 <h3 key={industry.title} className='industry-title'>{industry.title}</h3>
                                 <p key={industry.text} className='industry-text'>{industry.text}</p>
